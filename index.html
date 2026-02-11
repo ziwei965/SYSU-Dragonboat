@@ -179,7 +179,7 @@
             <div class="merch-grid">
                 <!-- Transfer Stickers -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
                         <img src="images/merch/transfer-stickers.png" alt="转印贴纸" loading="lazy">
                     </div>
                     <div class="merch-info">
@@ -189,24 +189,54 @@
                     </div>
                 </div>
 
-                <!-- Regular Stickers -->
+                <!-- Regular Stickers - 4 individual cards -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-sticker-grid">
-                        <img src="images/merch/sticker-gate.png" alt="贴纸" loading="lazy">
-                        <img src="images/merch/sticker-emblem.png" alt="贴纸" loading="lazy">
-                        <img src="images/merch/sticker-pixel.png" alt="贴纸" loading="lazy">
-                        <img src="images/merch/sticker-logo.png" alt="贴纸" loading="lazy">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/sticker-gate.png" alt="贴纸 - Q版校门" loading="lazy">
                     </div>
                     <div class="merch-info">
-                        <h4 data-i18n="merch.stickers.name">普通贴纸</h4>
+                        <h4 data-i18n="merch.sticker.gate">普通贴纸 - Q版校门</h4>
                         <p class="merch-price">$5</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('stickers','普通贴纸','Vinyl Stickers',5,false)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('sticker-gate','普通贴纸-Q版校门','Sticker - Campus Gate',5,false)" data-i18n="merch.addToCart">加入购物车</button>
+                    </div>
+                </div>
+
+                <div class="merch-card animate-on-scroll">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/sticker-emblem.png" alt="贴纸 - 校徽" loading="lazy">
+                    </div>
+                    <div class="merch-info">
+                        <h4 data-i18n="merch.sticker.emblem">普通贴纸 - 校徽</h4>
+                        <p class="merch-price">$5</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('sticker-emblem','普通贴纸-校徽','Sticker - Emblem',5,false)" data-i18n="merch.addToCart">加入购物车</button>
+                    </div>
+                </div>
+
+                <div class="merch-card animate-on-scroll">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/sticker-pixel.png" alt="贴纸 - 像素点" loading="lazy">
+                    </div>
+                    <div class="merch-info">
+                        <h4 data-i18n="merch.sticker.pixel">普通贴纸 - 像素鸭</h4>
+                        <p class="merch-price">$5</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('sticker-pixel','普通贴纸-像素鸭','Sticker - Pixel Duck',5,false)" data-i18n="merch.addToCart">加入购物车</button>
+                    </div>
+                </div>
+
+                <div class="merch-card animate-on-scroll">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/sticker-logo.png" alt="贴纸 - 经典Logo" loading="lazy">
+                    </div>
+                    <div class="merch-info">
+                        <h4 data-i18n="merch.sticker.logo">普通贴纸 - 经典Logo</h4>
+                        <p class="merch-price">$5</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('sticker-logo','普通贴纸-经典Logo','Sticker - Classic Logo',5,false)" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
                 <!-- Bucket Hat -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-dual">
+                    <div class="merch-image merch-dual merch-zoomable" onclick="zoomMerch(this)">
                         <img src="images/merch/bucket-hat-white.jpg" alt="渔夫帽白" loading="lazy">
                         <img src="images/merch/bucket-hat-black.jpg" alt="渔夫帽黑" loading="lazy">
                     </div>
@@ -217,9 +247,21 @@
                     </div>
                 </div>
 
+                <!-- Baseball Cap -->
+                <div class="merch-card animate-on-scroll">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/baseball-cap.png" alt="棒球帽" loading="lazy">
+                    </div>
+                    <div class="merch-info">
+                        <h4 data-i18n="merch.cap.name">棒球帽</h4>
+                        <p class="merch-price">$25</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('cap','棒球帽','Baseball Cap',25,false)" data-i18n="merch.addToCart">加入购物车</button>
+                    </div>
+                </div>
+
                 <!-- Long Sleeve Jersey -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
                         <img src="images/merch/jersey-long.jpg" alt="长袖队服" loading="lazy">
                     </div>
                     <div class="merch-info">
@@ -232,7 +274,7 @@
 
                 <!-- Short Sleeve Jersey -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
                         <img src="images/merch/jersey-short.png" alt="短袖队服" loading="lazy">
                     </div>
                     <div class="merch-info">
@@ -245,25 +287,38 @@
 
                 <!-- Windbreaker -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
                         <img src="images/merch/windbreaker.jpg" alt="冲锋衣" loading="lazy">
                     </div>
                     <div class="merch-info">
                         <h4 data-i18n="merch.windbreaker.name">冲锋衣</h4>
                         <p class="merch-price">$75</p>
+                        <a href="images/merch/windbreaker-sizes.jpg" target="_blank" class="size-chart-link" data-i18n="merch.sizeChart">查看尺码表</a>
                         <button class="add-to-cart-btn" onclick="addToCart('windbreaker','冲锋衣','Windbreaker',75,true)" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
-                <!-- Fridge Magnet -->
+                <!-- Fridge Magnet - Dragon -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-placeholder">
-                        <div class="placeholder-icon">🧲</div>
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/magnet-dragon.png" alt="冰箱贴 - 龙舟队" loading="lazy">
                     </div>
                     <div class="merch-info">
-                        <h4 data-i18n="merch.magnet.name">双鸭山冰箱贴</h4>
+                        <h4 data-i18n="merch.magnet.dragon">冰箱贴 - 龙舟队</h4>
                         <p class="merch-price">$10</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('magnet','双鸭山冰箱贴','Fridge Magnet',10,false)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('magnet-dragon','冰箱贴-龙舟队','Magnet - Dragon Boat',10,false)" data-i18n="merch.addToCart">加入购物车</button>
+                    </div>
+                </div>
+
+                <!-- Fridge Magnet - Centennial -->
+                <div class="merch-card animate-on-scroll">
+                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/magnet-centennial.png" alt="冰箱贴 - 世纪华诞" loading="lazy">
+                    </div>
+                    <div class="merch-info">
+                        <h4 data-i18n="merch.magnet.centennial">冰箱贴 - 世纪华诞</h4>
+                        <p class="merch-price">$10</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('magnet-centennial','冰箱贴-世纪华诞','Magnet - Centennial',10,false)" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
             </div>
@@ -293,6 +348,11 @@
             <p class="footer-copy">&copy; 2025 SYSU New England Alumni Dragon Boat Team</p>
         </div>
     </footer>
+
+    <!-- Merch Zoom Overlay -->
+    <div class="merch-zoom-overlay" id="merchZoom" onclick="closeMerchZoom()">
+        <img src="" alt="" id="merchZoomImg">
+    </div>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">

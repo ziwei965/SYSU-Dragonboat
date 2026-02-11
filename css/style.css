@@ -618,6 +618,57 @@ a {
     object-fit: cover;
 }
 
+.merch-zoomable {
+    cursor: zoom-in;
+    position: relative;
+}
+
+.merch-zoomable::after {
+    content: '🔍';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    background: rgba(255,255,255,0.85);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition);
+    pointer-events: none;
+}
+
+.merch-zoomable:hover::after {
+    opacity: 1;
+}
+
+/* Merch Zoom Overlay */
+.merch-zoom-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2500;
+    background: rgba(0,0,0,0.88);
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.merch-zoom-overlay.active {
+    display: flex;
+}
+
+.merch-zoom-overlay img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .merch-sticker-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

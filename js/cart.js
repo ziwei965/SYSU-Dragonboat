@@ -247,6 +247,31 @@ function closeSizeModal() {
 }
 
 /* ========================================
+   Merch Image Zoom
+   ======================================== */
+function zoomMerch(el) {
+    const img = el.querySelector('img');
+    if (!img) return;
+    const overlay = document.getElementById('merchZoom');
+    const zoomImg = document.getElementById('merchZoomImg');
+    zoomImg.src = img.src;
+    zoomImg.alt = img.alt;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMerchZoom() {
+    document.getElementById('merchZoom').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('merchZoom').classList.contains('active')) {
+        closeMerchZoom();
+    }
+});
+
+/* ========================================
    Init
    ======================================== */
 document.addEventListener('DOMContentLoaded', () => {
