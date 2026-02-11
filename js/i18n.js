@@ -51,6 +51,26 @@ const translations = {
         'merch.purchase.text': '扫码添加中山大学新英格兰校友会小助手微信购买周边',
         'merch.purchase.label': '中山大学新英格兰校友会小助手',
 
+        'merch.addToCart': '加入购物车',
+
+        'cart.added': '已加入购物车',
+        'cart.title': '购物车',
+        'cart.empty': '购物车是空的',
+        'cart.total': '合计',
+        'cart.checkout': '去结算',
+        'cart.selectSize': '选择尺码',
+        'cart.cancel': '取消',
+
+        'checkout.title': '确认订单',
+        'checkout.name': '姓名',
+        'checkout.contact': '邮箱 / 手机号',
+        'checkout.payMethod': '付款方式',
+        'checkout.note': '请先通过 Venmo 或 Zelle 完成付款，再点击下方按钮提交订单。我们会尽快确认并安排发货。',
+        'checkout.submit': '确认下单',
+        'checkout.successTitle': '订单已提交！',
+        'checkout.successMsg': '我们已收到您的订单信息，确认付款后会尽快安排发货。',
+        'checkout.close': '关闭',
+
         'footer.name': '双鸭山龙舟队',
         'footer.org': '中山大学新英格兰校友龙舟队',
         'footer.tagline': '奋楫前行，奔赴更远的海'
@@ -108,6 +128,26 @@ const translations = {
         'merch.purchase.text': 'Scan the QR code to add our WeChat assistant and purchase merchandise',
         'merch.purchase.label': 'SYSU New England Alumni Association Assistant',
 
+        'merch.addToCart': 'Add to Cart',
+
+        'cart.added': 'Added to cart',
+        'cart.title': 'Shopping Cart',
+        'cart.empty': 'Your cart is empty',
+        'cart.total': 'Total',
+        'cart.checkout': 'Checkout',
+        'cart.selectSize': 'Select Size',
+        'cart.cancel': 'Cancel',
+
+        'checkout.title': 'Confirm Order',
+        'checkout.name': 'Name',
+        'checkout.contact': 'Email / Phone',
+        'checkout.payMethod': 'Payment Method',
+        'checkout.note': 'Please complete payment via Venmo or Zelle first, then click the button below to submit your order. We will confirm and arrange delivery shortly.',
+        'checkout.submit': 'Place Order',
+        'checkout.successTitle': 'Order Submitted!',
+        'checkout.successMsg': 'We have received your order. After confirming payment, we will arrange delivery as soon as possible.',
+        'checkout.close': 'Close',
+
         'footer.name': 'SYSU Dragon Boat',
         'footer.org': 'Sun Yat-sen University New England Alumni Dragon Boat Team',
         'footer.tagline': 'Paddling Forward, Towards Greater Horizons'
@@ -132,6 +172,11 @@ function setLanguage(lang) {
     const langBtn = document.getElementById('langToggle');
     if (langBtn) {
         langBtn.textContent = lang === 'zh' ? 'EN' : '中文';
+    }
+
+    // Re-render cart items with new language
+    if (typeof Cart !== 'undefined') {
+        Cart.render();
     }
 }
 
