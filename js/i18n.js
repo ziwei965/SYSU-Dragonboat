@@ -4,11 +4,13 @@ const translations = {
         'nav.about': '关于我们',
         'nav.achievements': '赛事成就',
         'nav.merch': '队伍周边',
+        'nav.signup': '报名加入',
 
         'hero.title': '双鸭山龙舟队',
         'hero.subtitle': '中山大学新英格兰校友龙舟队',
         'hero.tagline': '三年破浪，从零到领奖台',
         'hero.cta': '了解更多',
+        'hero.signup': '报名加入',
 
         'about.title': '关于我们',
         'about.p1': '2023年，中山大学新英格兰校友会的一群校友因热血与热爱在波士顿的查尔斯河畔集结，组建了「双鸭山龙舟队」，从零起步划响了属于中大的第一桨。大家心中都有一个朴素的念头——中大人，也应该有属于自己的龙舟队，让中大绿在异乡河面上飘扬，成为凝聚校友情感的纽带。',
@@ -59,11 +61,13 @@ const translations = {
         'nav.about': 'About',
         'nav.achievements': 'Achievements',
         'nav.merch': 'Merchandise',
+        'nav.signup': 'Join Us',
 
         'hero.title': 'SYSU Dragon Boat',
         'hero.subtitle': 'Sun Yat-sen University New England Alumni Dragon Boat Team',
         'hero.tagline': 'Three Years of Breaking Waves — From Zero to the Podium',
         'hero.cta': 'Learn More',
+        'hero.signup': 'Join Us',
 
         'about.title': 'About Us',
         'about.p1': 'In 2023, a group of alumni from the Sun Yat-sen University New England Alumni Association came together on the banks of the Charles River, driven by passion and camaraderie. They founded the "SYSU Dragon Boat Team" (nicknamed "Shuangyashan"), starting from scratch to make the first paddle stroke for SYSU. They shared a simple belief — SYSU alumni deserve their own dragon boat team, letting the iconic SYSU green fly on foreign waters as a bond uniting alumni abroad.',

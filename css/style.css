@@ -279,6 +279,33 @@ a {
     color: var(--green-dark);
 }
 
+.hero-cta-signup {
+    background: var(--gold);
+    color: var(--green-dark);
+    margin-left: 16px;
+}
+
+.hero-cta-signup:hover {
+    background: var(--gold-light);
+}
+
+.nav-signup {
+    background: var(--gold) !important;
+    color: var(--green-dark) !important;
+    padding: 6px 18px !important;
+    border-radius: 20px;
+    font-weight: 600 !important;
+    transition: background var(--transition);
+}
+
+.nav-signup:hover {
+    background: var(--gold-light) !important;
+}
+
+.nav-signup::after {
+    display: none !important;
+}
+
 /* ========================================
    About Section
    ======================================== */
