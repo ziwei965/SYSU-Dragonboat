@@ -1118,7 +1118,7 @@ a {
     margin-bottom: 20px;
 }
 
-.size-options {
+.variant-options {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -1126,20 +1126,20 @@ a {
     margin-bottom: 20px;
 }
 
-.size-btn {
-    width: 52px;
-    height: 52px;
+.variant-btn {
+    min-width: 52px;
+    padding: 12px 20px;
     border-radius: 10px;
     border: 2px solid var(--gray-200);
     background: var(--white);
-    font-family: var(--font-en);
+    font-family: var(--font-zh-body), var(--font-en);
     font-weight: 600;
     font-size: 0.95rem;
     cursor: pointer;
     transition: border-color var(--transition), background var(--transition);
 }
 
-.size-btn:hover {
+.variant-btn:hover {
     border-color: var(--green);
     background: rgba(26,86,50,0.05);
 }

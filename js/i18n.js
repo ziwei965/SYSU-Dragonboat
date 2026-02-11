@@ -41,10 +41,7 @@ const translations = {
 
         'merch.title': '队伍周边',
         'merch.transfer.name': '转印贴纸',
-        'merch.sticker.gate': '普通贴纸 - Q版校门',
-        'merch.sticker.emblem': '普通贴纸 - 校徽',
-        'merch.sticker.pixel': '普通贴纸 - 像素鸭',
-        'merch.sticker.logo': '普通贴纸 - 经典Logo',
+        'merch.stickers.name': '普通贴纸',
         'merch.hat.name': '渔夫帽',
         'merch.cap.name': '棒球帽',
         'merch.jerseyLong.name': '长袖队服',
@@ -123,10 +120,7 @@ const translations = {
 
         'merch.title': 'Merchandise',
         'merch.transfer.name': 'Transfer Stickers',
-        'merch.sticker.gate': 'Sticker - Campus Gate',
-        'merch.sticker.emblem': 'Sticker - SYSU Emblem',
-        'merch.sticker.pixel': 'Sticker - Pixel Duck',
-        'merch.sticker.logo': 'Sticker - Classic Logo',
+        'merch.stickers.name': 'Vinyl Stickers',
         'merch.hat.name': 'Bucket Hat',
         'merch.cap.name': 'Baseball Cap',
         'merch.jerseyLong.name': 'Long Sleeve Jersey',

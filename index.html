@@ -189,48 +189,18 @@
                     </div>
                 </div>
 
-                <!-- Regular Stickers - 4 individual cards -->
+                <!-- Regular Stickers -->
                 <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
-                        <img src="images/merch/sticker-gate.png" alt="贴纸 - Q版校门" loading="lazy">
+                    <div class="merch-image merch-sticker-grid merch-zoomable" onclick="zoomMerch(this)">
+                        <img src="images/merch/sticker-gate.png" alt="贴纸" loading="lazy">
+                        <img src="images/merch/sticker-emblem.png" alt="贴纸" loading="lazy">
+                        <img src="images/merch/sticker-pixel.png" alt="贴纸" loading="lazy">
+                        <img src="images/merch/sticker-logo.png" alt="贴纸" loading="lazy">
                     </div>
                     <div class="merch-info">
-                        <h4 data-i18n="merch.sticker.gate">普通贴纸 - Q版校门</h4>
+                        <h4 data-i18n="merch.stickers.name">普通贴纸</h4>
                         <p class="merch-price">$5</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('sticker-gate','普通贴纸-Q版校门','Sticker - Campus Gate',5,false)" data-i18n="merch.addToCart">加入购物车</button>
-                    </div>
-                </div>
-
-                <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
-                        <img src="images/merch/sticker-emblem.png" alt="贴纸 - 校徽" loading="lazy">
-                    </div>
-                    <div class="merch-info">
-                        <h4 data-i18n="merch.sticker.emblem">普通贴纸 - 校徽</h4>
-                        <p class="merch-price">$5</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('sticker-emblem','普通贴纸-校徽','Sticker - Emblem',5,false)" data-i18n="merch.addToCart">加入购物车</button>
-                    </div>
-                </div>
-
-                <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
-                        <img src="images/merch/sticker-pixel.png" alt="贴纸 - 像素点" loading="lazy">
-                    </div>
-                    <div class="merch-info">
-                        <h4 data-i18n="merch.sticker.pixel">普通贴纸 - 像素鸭</h4>
-                        <p class="merch-price">$5</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('sticker-pixel','普通贴纸-像素鸭','Sticker - Pixel Duck',5,false)" data-i18n="merch.addToCart">加入购物车</button>
-                    </div>
-                </div>
-
-                <div class="merch-card animate-on-scroll">
-                    <div class="merch-image merch-zoomable" onclick="zoomMerch(this)">
-                        <img src="images/merch/sticker-logo.png" alt="贴纸 - 经典Logo" loading="lazy">
-                    </div>
-                    <div class="merch-info">
-                        <h4 data-i18n="merch.sticker.logo">普通贴纸 - 经典Logo</h4>
-                        <p class="merch-price">$5</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('sticker-logo','普通贴纸-经典Logo','Sticker - Classic Logo',5,false)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('sticker','普通贴纸','Vinyl Sticker',5,'sticker')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -243,7 +213,7 @@
                     <div class="merch-info">
                         <h4 data-i18n="merch.hat.name">渔夫帽</h4>
                         <p class="merch-price">$25</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('hat','渔夫帽','Bucket Hat',25,false)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('hat','渔夫帽','Bucket Hat',25,'color')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -255,7 +225,7 @@
                     <div class="merch-info">
                         <h4 data-i18n="merch.cap.name">棒球帽</h4>
                         <p class="merch-price">$25</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('cap','棒球帽','Baseball Cap',25,false)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('cap','棒球帽','Baseball Cap',25,'color')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -268,7 +238,7 @@
                         <h4 data-i18n="merch.jerseyLong.name">长袖队服</h4>
                         <p class="merch-price">$35</p>
                         <a href="images/merch/jersey-long-sizes.jpg" target="_blank" class="size-chart-link" data-i18n="merch.sizeChart">查看尺码表</a>
-                        <button class="add-to-cart-btn" onclick="addToCart('jersey-long','长袖队服','Long Sleeve Jersey',35,true)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('jersey-long','长袖队服','Long Sleeve Jersey',35,'size')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -281,7 +251,7 @@
                         <h4 data-i18n="merch.jerseyShort.name">短袖队服</h4>
                         <p class="merch-price">$25</p>
                         <a href="images/merch/jersey-short-sizes.png" target="_blank" class="size-chart-link" data-i18n="merch.sizeChart">查看尺码表</a>
-                        <button class="add-to-cart-btn" onclick="addToCart('jersey-short','短袖队服','Short Sleeve Jersey',25,true)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('jersey-short','短袖队服','Short Sleeve Jersey',25,'size')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -294,7 +264,7 @@
                         <h4 data-i18n="merch.windbreaker.name">冲锋衣</h4>
                         <p class="merch-price">$75</p>
                         <a href="images/merch/windbreaker-sizes.jpg" target="_blank" class="size-chart-link" data-i18n="merch.sizeChart">查看尺码表</a>
-                        <button class="add-to-cart-btn" onclick="addToCart('windbreaker','冲锋衣','Windbreaker',75,true)" data-i18n="merch.addToCart">加入购物车</button>
+                        <button class="add-to-cart-btn" onclick="addToCart('windbreaker','冲锋衣','Windbreaker',75,'size')" data-i18n="merch.addToCart">加入购物车</button>
                     </div>
                 </div>
 
@@ -387,18 +357,12 @@
     </div>
     <div class="cart-drawer-overlay" onclick="closeCart()"></div>
 
-    <!-- Size Selector Modal -->
-    <div class="modal-overlay" id="sizeModal" onclick="if(event.target===this)closeSizeModal()">
+    <!-- Variant Selector Modal -->
+    <div class="modal-overlay" id="variantModal" onclick="if(event.target===this)closeVariantModal()">
         <div class="modal-box">
-            <h4 data-i18n="cart.selectSize">选择尺码</h4>
-            <div class="size-options">
-                <button class="size-btn" onclick="selectSize('S')">S</button>
-                <button class="size-btn" onclick="selectSize('M')">M</button>
-                <button class="size-btn" onclick="selectSize('L')">L</button>
-                <button class="size-btn" onclick="selectSize('XL')">XL</button>
-                <button class="size-btn" onclick="selectSize('2XL')">2XL</button>
-            </div>
-            <button class="modal-cancel" onclick="closeSizeModal()" data-i18n="cart.cancel">取消</button>
+            <h4 id="variantModalTitle">选择</h4>
+            <div class="variant-options" id="variantOptions"></div>
+            <button class="modal-cancel" onclick="closeVariantModal()" data-i18n="cart.cancel">取消</button>
         </div>
     </div>
 

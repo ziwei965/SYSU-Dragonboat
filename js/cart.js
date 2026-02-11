@@ -221,29 +221,75 @@ Total: $${Cart.getTotal()}`;
 }
 
 /* ========================================
-   Size Selector for Add to Cart
+   Variant Definitions
    ======================================== */
-function addToCart(id, name, nameEn, price, hasSizes) {
-    if (hasSizes) {
-        const sizeModal = document.getElementById('sizeModal');
-        sizeModal.dataset.id = id;
-        sizeModal.dataset.name = name;
-        sizeModal.dataset.nameEn = nameEn;
-        sizeModal.dataset.price = price;
-        sizeModal.classList.add('active');
-    } else {
-        Cart.add(id, name, nameEn, price, null);
+const variantConfig = {
+    size: {
+        titleZh: '选择尺码', titleEn: 'Select Size',
+        options: [
+            { value: 'S', label: 'S' },
+            { value: 'M', label: 'M' },
+            { value: 'L', label: 'L' },
+            { value: 'XL', label: 'XL' },
+            { value: '2XL', label: '2XL' }
+        ]
+    },
+    color: {
+        titleZh: '选择颜色', titleEn: 'Select Color',
+        options: [
+            { value: '白/White', labelZh: '白色', labelEn: 'White' },
+            { value: '黑/Black', labelZh: '黑色', labelEn: 'Black' }
+        ]
+    },
+    sticker: {
+        titleZh: '选择款式', titleEn: 'Select Design',
+        options: [
+            { value: 'Q版校门/Campus Gate', labelZh: 'Q版校门', labelEn: 'Campus Gate' },
+            { value: '校徽/Emblem', labelZh: '校徽', labelEn: 'SYSU Emblem' },
+            { value: '像素鸭/Pixel Duck', labelZh: '像素鸭', labelEn: 'Pixel Duck' },
+            { value: '经典Logo/Classic Logo', labelZh: '经典Logo', labelEn: 'Classic Logo' }
+        ]
     }
+};
+
+/* ========================================
+   Add to Cart with Variant Selection
+   ======================================== */
+function addToCart(id, name, nameEn, price, variantType) {
+    if (!variantType) {
+        Cart.add(id, name, nameEn, price, null);
+        return;
+    }
+
+    const modal = document.getElementById('variantModal');
+    const titleEl = document.getElementById('variantModalTitle');
+    const optionsEl = document.getElementById('variantOptions');
+    const config = variantConfig[variantType];
+    const isZh = currentLang === 'zh';
+
+    modal.dataset.id = id;
+    modal.dataset.name = name;
+    modal.dataset.nameEn = nameEn;
+    modal.dataset.price = price;
+
+    titleEl.textContent = isZh ? config.titleZh : config.titleEn;
+
+    optionsEl.innerHTML = config.options.map(opt => {
+        const label = opt.label || (isZh ? opt.labelZh : opt.labelEn);
+        return `<button class="variant-btn" onclick="selectVariant('${opt.value}')">${label}</button>`;
+    }).join('');
+
+    modal.classList.add('active');
 }
 
-function selectSize(size) {
-    const m = document.getElementById('sizeModal');
-    Cart.add(m.dataset.id, m.dataset.name, m.dataset.nameEn, Number(m.dataset.price), size);
+function selectVariant(value) {
+    const m = document.getElementById('variantModal');
+    Cart.add(m.dataset.id, m.dataset.name, m.dataset.nameEn, Number(m.dataset.price), value);
     m.classList.remove('active');
 }
 
-function closeSizeModal() {
-    document.getElementById('sizeModal').classList.remove('active');
+function closeVariantModal() {
+    document.getElementById('variantModal').classList.remove('active');
 }
 
 /* ========================================
@@ -266,8 +312,9 @@ function closeMerchZoom() {
 }
 
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && document.getElementById('merchZoom').classList.contains('active')) {
-        closeMerchZoom();
+    if (e.key === 'Escape') {
+        if (document.getElementById('merchZoom').classList.contains('active')) closeMerchZoom();
+        if (document.getElementById('variantModal').classList.contains('active')) closeVariantModal();
     }
 });
 
