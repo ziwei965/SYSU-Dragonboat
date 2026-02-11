@@ -11,9 +11,8 @@ const translations = {
         'hero.cta': '了解更多',
 
         'about.title': '关于我们',
-        'about.p1': '波士顿龙舟赛是北美历史最悠久、规模最大的龙舟赛事之一，每年吸引近七十支来自新英格兰各地的队伍在查尔斯河上奋楫争先，不仅是竞技舞台，更是华人社群和留学生圈的年度盛事。',
-        'about.p2': '2023年，中山大学新英格兰校友会的一群校友因热血与热爱在波士顿的查尔斯河畔集结，组建了「双鸭山龙舟队」，从零起步划响了属于中大的第一桨。大家心中都有一个朴素的念头——中大人，也应该有属于自己的龙舟队，让中大绿在异乡河面上飘扬，成为凝聚校友情感的纽带。',
-        'about.p3': '三年间，队伍从E组初露锋芒，到B组稳居强手之列，再到刷新队史纪录，步步为营、节节攀升；三年间，越来越多的中大校友加入其中，让这支队伍不断壮大，也让校友情感在异乡蓬勃生长。今年夏天，他们终于在罗德岛的赛场上首次登上领奖台，斩获队史第一枚金牌——从无到有，从追赶到争冠，三年时间，他们用汗水与坚持，让中大精神在海外异乡的河面上闪耀。',
+        'about.p1': '2023年，中山大学新英格兰校友会的一群校友因热血与热爱在波士顿的查尔斯河畔集结，组建了「双鸭山龙舟队」，从零起步划响了属于中大的第一桨。大家心中都有一个朴素的念头——中大人，也应该有属于自己的龙舟队，让中大绿在异乡河面上飘扬，成为凝聚校友情感的纽带。',
+        'about.p2': '三年间，队伍从E组初露锋芒，到B组稳居强手之列，再到刷新队史纪录，步步为营、节节攀升；三年间，越来越多的中大校友加入其中，让这支队伍不断壮大，也让校友情感在异乡蓬勃生长。今年夏天，他们终于在罗德岛的赛场上首次登上领奖台，斩获队史第一枚金牌——从无到有，从追赶到争冠，三年时间，他们用汗水与坚持，让中大精神在海外异乡的河面上闪耀。',
 
         'achievements.title': '赛事成就',
 
@@ -67,9 +66,8 @@ const translations = {
         'hero.cta': 'Learn More',
 
         'about.title': 'About Us',
-        'about.p1': 'The Boston Dragon Boat Festival is one of the oldest and largest dragon boat races in North America. Every year, nearly seventy teams from across New England compete on the Charles River — it\'s not only a competitive arena but also a signature annual event for the Chinese community and international students.',
-        'about.p2': 'In 2023, a group of alumni from the Sun Yat-sen University New England Alumni Association came together on the banks of the Charles River, driven by passion and camaraderie. They founded the "SYSU Dragon Boat Team" (nicknamed "Shuangyashan"), starting from scratch to make the first paddle stroke for SYSU. They shared a simple belief — SYSU alumni deserve their own dragon boat team, letting the iconic SYSU green fly on foreign waters as a bond uniting alumni abroad.',
-        'about.p3': 'Over three years, the team rose from Division E rookies to strong contenders in Division B, breaking team records along the way. More and more SYSU alumni joined the ranks, strengthening the team and deepening alumni bonds overseas. This past summer, they finally took the podium for the first time at the Rhode Island Dragon Boat Festival, winning their first-ever gold medal — from nothing to champions, three years of sweat and perseverance made the SYSU spirit shine on waters far from home.',
+        'about.p1': 'In 2023, a group of alumni from the Sun Yat-sen University New England Alumni Association came together on the banks of the Charles River, driven by passion and camaraderie. They founded the "SYSU Dragon Boat Team" (nicknamed "Shuangyashan"), starting from scratch to make the first paddle stroke for SYSU. They shared a simple belief — SYSU alumni deserve their own dragon boat team, letting the iconic SYSU green fly on foreign waters as a bond uniting alumni abroad.',
+        'about.p2': 'Over three years, the team rose from Division E rookies to strong contenders in Division B, breaking team records along the way. More and more SYSU alumni joined the ranks, strengthening the team and deepening alumni bonds overseas. This past summer, they finally took the podium for the first time at the Rhode Island Dragon Boat Festival, winning their first-ever gold medal — from nothing to champions, three years of sweat and perseverance made the SYSU spirit shine on waters far from home.',
 
         'achievements.title': 'Achievements',
 
