@@ -295,8 +295,8 @@ function closeVariantModal() {
 /* ========================================
    Merch Image Zoom
    ======================================== */
-function zoomMerch(el) {
-    const img = el.querySelector('img');
+function zoomMerch(el, event) {
+    const img = (event && event.target.tagName === 'IMG') ? event.target : el.querySelector('img');
     if (!img) return;
     const overlay = document.getElementById('merchZoom');
     const zoomImg = document.getElementById('merchZoomImg');
